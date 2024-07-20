@@ -1,0 +1,150 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  }
+  body{
+      background-image: url(https://img.freepik.com/free-photo/high-angle-school-elements-assortment_23-2149000322.jpg?t=st=1719321195~exp=1719324795~hmac=1f716d5b4ea65a26c23270052210abbe4663b213a9bc4baf6aacb9f23cd6b1f1&w=996);
+      background-size: cover;
+  }
+  li{
+      list-style: none;
+      font-size: 20px;
+      padding-top: 20px;
+      font-weight: 600;
+  }
+  .boderr{
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(20px);
+      width: 500px;
+      height: 500px;
+      border-radius: 12px;
+      margin-top: 100px;
+      padding: 10px;
+  }
+  .btncal{
+      width: 75px;
+      height: 75px;
+      margin: 2px;
+      color: white;
+      font-size: 20px !important;
+  }
+  .calout{
+      width: 356px;
+      height: 415px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 150px;
+      
+  }
+  .display{
+      width: 100%;
+      height: 50px;
+      margin-bottom: 10px;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      background: #e1e1e1;
+  } */
+
+  /* Cal1 */
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: sans-serif;
+    font-weight: bold;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../src/components/top-view.jpg);
+    background-size: cover;
+}
+.calculator{
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.568);
+    box-shadow: 0 5px 18px 0px rgb(4 4 4);
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.953);
+}
+input{
+    width: 320px;
+    font-size: 65px;
+    padding: 25px;
+    border-radius: 16px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.356);
+    box-shadow: inset 0 0 8px rgba(0, 0, 8, 0.4);
+    color: white;
+    text-align: right;
+    border:  2px solid rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    cursor: auto;
+}
+input::placeholder{
+    color: white;
+}
+input:focus{
+    border: transparent;
+    outline: transparent
+}
+button{
+    width: 65px;
+    height: 63px;
+color: white;
+margin: 10px;
+background-color: #343a40;
+font-size: 25px;
+cursor: pointer;
+border: rgba(255, 255, 255, 0.2);
+border-radius:20px;
+text-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
+box-shadow:-1px 2px 10px  rgba(0, 0, 0, 0.5);
+transition: all .1s linear;
+}
+.ac,.del{
+    font-size: 20px;
+}
+.del:hover{
+    color: white !important;
+    background-color: #5a189a !important;
+}
+.ac:hover{
+    color: white !important;
+    background-color: #ef233be9 !important;
+}
+.percent:hover{
+    color: white !important;
+    background-color: #5a189a !important;
+}
+button:hover{
+    color: white;
+    background-color: #5a189a;
+}
+.equalbtn{
+    background-color: #ef233c; 
+}
+.equalbtn:hover{
+    background-color: #ef233be9;
+}
+.operator{
+    background-color:#5a189a;
+}
+@media only screen and (max-width:445px)  {
+.calculator{
+    padding: 15px;
+}
+input{
+    width: 275px;
+    font-size: 60px;
+}
+button{
+    width: 53px;
+    height: 53px;
+}
+}
